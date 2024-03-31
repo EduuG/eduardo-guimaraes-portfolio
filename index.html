@@ -1,0 +1,188 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Pessoal</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <nav>
+        <ul>
+          <button id="btnSobreMim" class="navButton">Sobre mim</button>
+          <button id="btnFormacao" class="navButton">Formação</button>
+          <button id="btnPortfolio" class="navButton">Portfólio</button>
+          <button id="btnContato" class="navButton">Contato</button>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="content">
+      <div id="window">
+        <div id="pnlSobreMim" class="painel">
+          <div id="divSobreMim">
+            <h1>Sobre mim</h1>
+            <hr />
+            <p>
+              Meu nome é <strong>Eduardo Guimarães dos Santos</strong>, tenho 20
+              anos, atualmente cursando Análise e Desenvolvimento de Sistemas na
+              Uninter e estagiando como desenvolvedor web em uma empresa de
+              pequeno porte.
+            </p>
+          </div>
+          <div id="divHobbies" class="bordered">
+            <h3>Hobbies favoritos</h3>
+            <br />
+            <ul>
+              <li>Jogar</li>
+              <li>Estudar programação</li>
+              <li>Apreciador de teclados mecânicos</li>
+              <li>Ouvir música</li>
+              <li>Entusiasta de computadores retrô</li>
+              <li>Linux e softwares open source</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="pnlFormacao" class="painel" style="display: none">
+          <div id="divFormacao">
+            <h1>Formação</h1>
+            <hr />
+            <ul>
+              <li>Cursando Análise e Desenvolvimento de Sistemas</li>
+              <li>Inglês intermediário</li>
+              <li>Ensino médio técnico em TI</li>
+            </ul>
+            <br />
+            <p>
+              Possuo também cursos adicionais, como de criação de jogos com
+              Unity, administração de sistemas Linux, React, C++, Python, dentre
+              outras linguagens e frameworks.
+            </p>
+          </div>
+        </div>
+
+        <div id="pnlPortfolio" class="painel" style="display: none">
+          <div id="divPortfolio">
+            <h1>Portfólio</h1>
+            <hr />
+            <br />
+            <h3>Projetos pessoais</h3>
+            <br />
+            <p>
+              Apesar de possuir uma boa quantidade de projetos pessoais, apenas
+              dois foram disponibilizados na web, sendo eles:
+            </p>
+            <br />
+            <ul>
+              <li>
+                <a href="https://eduug.github.io/Tasks/">Tasks</a> - Um site
+                simples de anotações de tarefas
+              </li>
+              <li>
+                <a href="https://eduug.github.io/exemplo-website-1/"
+                  >Exemplo de Website Responsivo</a
+                >
+                - Feito puramente com HTML, CSS e JavaScript
+              </li>
+            </ul>
+
+            <br />
+            <h3>Stacks</h3>
+            <div id="stacks" class="bordered">
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg"
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
+                />
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="pnlContato" class="painel" style="display: none">
+          <div id="divPortfolio">
+            <h1>Contato</h1>
+            <hr />
+            <form id="contato-form">
+              <div class="form">
+                <label>Nome</label>
+                <input type="text" class="text" />
+              </div>
+              <div class="form">
+                <label>E-mail</label>
+                <input type="text" class="text" />
+              </div>
+              <div id="mensagem">
+                <label>Mensagem</label>
+                <textarea></textarea>
+              </div>
+              <div id="submit">
+                <input type="submit" value="Enviar mensagem" class="button" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="rodape">
+      <p>Feito por: Eduardo Guimarães dos Santos</p>
+      <p><strong>RU: 4594343</strong></p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,213 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  max-width: fit-content;
+  padding-inline: 60px;
+  border-radius: 50px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#navbar a {
+  color: black;
+  min-width: 500px;
+  text-decoration: none;
+}
+
+#navbar button {
+  font-size: 0.95em;
+  border: 0;
+  background-color: white;
+  list-style-type: none;
+  min-width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#navbar button:hover {
+  background-color: rgb(231, 240, 240);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#window {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 10px;
+  padding: 70px;
+  width: 50em;
+  max-width: 50em;
+  max-height: 40em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 50px;
+  transition: height 0.5s, width 0.5s;
+}
+
+#window hr {
+  display: block;
+  border-style: inset;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: rgba(255, 255, 255, 0.4);
+  border-width: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.painel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation: fadeIn 1s linear 1 forwards;
+}
+
+.bordered {
+  padding: 10px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  list-style: square inside none;
+}
+
+#stacks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  gap: 16px;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.grid-item img {
+  display: block;
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contato-form .form {
+  display: flex;
+  align-items: center;
+}
+
+#contato-form label {
+  width: 70px;
+}
+
+#contato-form .text {
+  width: 70%;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-inline: 10px;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.459);
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#contato-form #mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+#contato-form #mensagem textarea {
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 80px;
+  resize: none;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.459);
+}
+
+#contato-form .button {
+  width: 70%;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-inline: 10px;
+  font-size: 1em;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+.divider {
+  display: flex;
+}
+
+#rodape {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
